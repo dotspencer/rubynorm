@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Rubynorm</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
+  <%= render 'partials/head' %>
   <body>
-    <%= yield %>
+    <%= render 'partials/header' %>
+    <div class="content">
+      <%= yield %>
+    </div>
+    <%= render 'partials/footer' %>
   </body>
 </html>
